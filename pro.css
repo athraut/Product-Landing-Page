@@ -1,0 +1,369 @@
+/* Global */
+:root {
+  --color1: #fff;
+  --color2: #00008b;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Hide scrollbar for Chrome, Safari */
+ ::-webkit-scrollbar {
+  display: none;
+}
+
+html {
+  scrollbar-width: none; /* Hide scrollbar for Firefox */
+  font-size: 10px;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+}
+
+main {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+/* Header */
+#header {
+  background-color: var(--color2);
+}
+
+#head{
+  width: 100%;
+}
+
+#header-img {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+}
+
+.header-title {
+  padding-top: 1rem;
+  color: var(--color1);
+  font-family: 'Open Sans', sans-serif;
+  font-size: 2.8rem;
+  font-weight: 400;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.material-symbols-rounded {
+  position: absolute;
+  top: 2rem;
+  right: 1rem;
+  padding-right: 1rem;
+  color: var(--color1);
+  transform: scale(1.5);
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 300,
+  'GRAD' 0,
+  'opsz' 48
+}
+
+#nav-bar {
+  display: none;
+  padding: 0 1rem;
+  font-size: 2rem;
+}
+
+.nav-link {
+  display: block;
+  text-align: center;
+  width: fit-content;
+  margin: 0 auto;
+  padding-top: 2rem;
+  color: var(--color1);
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  font-size: 2rem;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+/* Content */
+section {
+  width: 100%;
+  padding: 1rem;
+  padding-bottom: 0;
+}
+
+h2 {
+  margin-bottom: 1rem;
+  color: var(--color2);
+  font-family: 'Inter', sans-serif;
+  font-size: 2.5rem;
+  font-weight: 400;
+  text-decoration: underline;
+  text-decoration-color: var(--color2);
+  text-underline-offset: .8rem;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-size: 2.3rem;
+  font-weight: 800;
+  padding-bottom: 1rem;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.text {
+  margin-bottom: .5rem;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.3rem;
+  font-weight: 400;
+  line-height: 2rem;
+  text-indent: .5rem;
+  letter-spacing: .1rem;
+  word-spacing: .2rem;
+  text-align: justify;
+}
+
+
+.bold {
+  font-weight: 800;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.link {
+  color: var(--color1);
+  text-decoration: none;
+}
+
+/* About */
+#about {
+  margin-bottom: 2rem;
+}
+
+iframe {
+  display: block;
+  margin: 3rem auto;
+  min-width: 250px;
+  width: 100%;
+  max-width: 720px;
+  max-height: 480px;
+}
+
+/* Features */
+.features-grid {
+  margin-top: 2rem;
+}
+
+/* Features and Pricing */
+.features-grid,
+.place-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+/* --------------------- */
+
+.features-div {
+  margin: 3rem 0;
+  min-width: 280px;
+  width: 100%;
+  max-width: 500px;
+}
+
+.features-title {
+  color: var(--color2);
+  text-align: left;
+}
+
+/* Features Icons */
+.features-title::after {
+  vertical-align: middle;
+  margin-left: 1rem;
+}
+
+.partnership::after {
+  content: url(../assets/partner.png);
+}
+
+.satisfaction::after {
+  content: url(../assets/thumbs-up.png);
+}
+
+.journey::after {
+  content: url(../assets/ship.png);
+}
+/* Pricing */
+.place-container {
+  max-width: 1200px;
+  margin: 3rem 0;
+}
+
+.place-item {
+  margin: 0 auto;
+  min-width: 280px;
+  width: 100%;
+  max-width: 500px;
+  min-height: 300px;
+  height: 500px;
+  max-height: 480px;
+  text-align: center;
+  color: var(--color1);
+}
+
+.place-image {
+  width: 100%;
+  height: 60%;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+}
+
+.bahamas {
+  background: url(../assets/bahamas.jpg);
+}
+.maldives {
+  background: url(../assets/maldives.jpg);
+}
+.okinawa {
+  background: url(../assets/okinawa.jpg);
+}
+
+.place-text {
+  padding: 1rem 3rem;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  background-color: var(--color2);
+  border-bottom-left-radius: 16px;
+  border-bottom-right-radius: 16px;
+}
+
+.place-price {
+  padding-top: 1rem;
+}
+
+/* Contact */
+#contact {
+  color: var(--color2);
+  margin-bottom: 3rem;
+}
+
+.contact {
+  margin-bottom: 4rem;
+  text-align: center;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+
+.contact-text {
+  display: inline-block;
+  padding: .5rem 0;
+  font-size: 1.8rem;
+}
+
+.contact-link{
+  color: black;
+  text-decoration: none;
+}
+
+/* Contact Icons */
+ion-icon[name="call-outline"],
+ion-icon[name="mail-outline"] {
+  color: var(--color2);
+  font-size: 2rem;
+  vertical-align: middle;
+}
+
+/* Form */
+#form #email, #submit {
+  border-radius: .5rem;
+  border: none;
+}
+
+#form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: var(--color2);
+  font-family: 'Open Sans', sans-serif;
+}
+
+#email-container {
+  color: var(--color1);
+  text-align: center;
+}
+
+#email {
+  display: inline-block;
+  min-width: 200px;
+  width: 80%;
+  max-width: 500px;
+  height: 2rem;
+  margin: .5rem 0;
+  padding: 2rem 1rem;
+  border: none;
+}
+
+button {
+  margin: .5rem;
+  vertical-align: middle;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+#send-icon {
+  line-height: 2rem;
+}
+
+/* Footer */
+.waves-bottom {
+  bottom: 0;
+}
+
+#footer {
+  max-height: 500px;
+  color: var(--color1);
+  background-color: var(--color2);
+}
+
+.social-media ion-icon,
+#send-icon {
+  margin-right: 1rem;
+  color: var(--color1);
+  font-size: 2.5rem;
+}
+
+.footer-top {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.footer-bottom {
+  padding: 1rem 0;
+  font-size: 1rem;
+}
+
+.copyright {
+  text-align: center;
+  margin-bottom: .8rem;
+}
+
+.footer-link {
+  display: block;
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+}

@@ -1,0 +1,139 @@
+/* Above 640px */
+@media screen and (min-width: 640px) {
+
+    section {
+      padding: 5rem auto;
+      max-width: 720px;
+      margin: 0 auto;
+    }
+    
+    /* Contact */
+    .contact {
+      margin-top: 3rem;
+      margin-bottom: 10rem;
+    }
+  
+    /* Form */
+    #form {
+      border-radius: 16px;
+    }
+  }
+  
+  /* Above 792px */
+  @media screen and (min-width: 792px) {
+    section {
+      margin-bottom: 3rem;
+    }
+  
+    .text {
+      font-size: 1.8rem;
+      line-height: 2.8rem;
+    }
+    /* Header */
+    #head {
+      display: inline-block;
+      width: 40%;
+    }
+  
+    .header-title {
+      text-align: left;
+      margin-left: calc(50px + 2rem);
+    }
+  
+    #nav-bar {
+      display: block;
+      text-align: center;
+    }
+  
+    .nav-link {
+      display: inline-block;
+      padding-right: .5rem;
+    }
+  
+    .nav-link:hover {
+      text-decoration: underline;
+      text-underline-offset: .5rem;
+      transition: .5s;
+    }
+  
+    #touchMenu {
+      display: none;
+    }
+  
+    /* About */
+    #about-container {
+      margin: 0 auto 5rem auto;
+    }
+  
+    /* Pricing and Features */
+    .place-item,
+    .features-div {
+      max-width: 300px;
+      padding: 2rem;
+    }
+  
+    .place-text {
+      font-size: 1.8rem;
+    }
+    
+    /* Footer */
+    .footer-top {
+      justify-content: center;
+      text-align: center;
+      font-size: 2rem;
+      padding: 3rem;
+    }
+  
+    .footer-link {
+      display: inline-block;
+      font-size: 1.5rem;
+      padding-right: 1rem;
+    }
+  
+    .copyright {
+      font-size: 1.5rem;
+    }
+  }
+  
+  /* Above 980px */
+  @media screen and (min-width: 980px) {
+    main,
+    section {
+      max-width: 1500px;
+    }
+  
+    /* Features and Pricing */
+    .features-grid,
+    .place-container {
+      display: grid;
+      grid-auto-flow: column;
+      margin: 0 auto;
+    }
+    
+    .place-item,
+    .features-div {
+      max-width: 500px;
+    }
+  
+    .features-grid,
+    .place-container {
+      gap: 5rem;
+    }
+    /* --------------------- */
+    
+    /* Features */
+    section:nth-child(2) {
+      margin-top: 8rem;
+    }
+  
+    iframe {
+      max-width: 1080px;
+      height: 720px;
+    }
+  
+    .place-text,
+    .place-image,
+    #form {
+      box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+    }
+  }
